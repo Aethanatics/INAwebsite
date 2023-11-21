@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ninomae Ina'nis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="mainn.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="mainn.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li class="dropdown-item">
+                        <a href="gallery.html">GALLERY</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="1.html">Fan Art</a></li>
+                                <li><a href="2.html">Costumes</a></li>
+                                <li><a href="3.html">inART</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="media.html">MEDIA</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="campus">
+            <h1>Costume Gallery</h1>
+            <p>Ina's Official Costume</p>
+            <div class="image-container">
+                <img src="images/c.png" alt="Gallery Image 1" onclick="displayImage('images/c.png')">
+                <img src="images/d.png" alt="Gallery Image 1" onclick="displayImage('images/d.png')">
+                <img src="images/e.png" alt="Gallery Image 1" onclick="displayImage('images/e.png')">
+                <img src="images/f.png" alt="Gallery Image 1" onclick="displayImage('images/f.png')">
+                <img src="images/g.png" alt="Gallery Image 1" onclick="displayImage('images/g.png')">
+                <img src="images/h1.png" alt="Gallery Image 1" onclick="displayImage('images/h1.png')">
+                <img src="images/b.png" alt="Gallery Image 1" onclick="displayImage('images/b.png')">
+                
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </section>
+    <div class="selected-image" align="center">
+        <img id="picture" border="5" alt="Selected Image">
+    </div>
+    <footer>
+        © All Rights Reserved 2023.
+    </footer>
+    <script>
+        function displayImage(src) {
+            var picture = document.getElementById("picture");
+            picture.src = src;
+        }
+    </script>
+</body>
+</html>
